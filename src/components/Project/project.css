@@ -1,0 +1,72 @@
+.project {
+  width: 30%;
+  height: 40vh;
+  margin: 20px 10px;
+  border: 2px solid green;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  position: relative;
+}
+.project-browser {
+  height: 20px;
+  background-color: #5fbb5f;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 3;
+}
+.project-circle {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: rgb(194, 206, 194);
+}
+
+.project-circle-case {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-circle-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectside-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 10s ease;
+}
+
+.project:hover .projectside-image {
+  transform: translateY(-100%);
+}
+
+.project-description {
+  width: 150px;
+  height: 150px;
+  background-color: forestgreen;
+  color: #5fbb5f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.project-description h3 {
+  background-color: transparent;
+  font-weight: bolder;
+}
+
+.project:hover .project-description {
+  opacity: 1;
+  transition: all ease-in-out 6s;
+}

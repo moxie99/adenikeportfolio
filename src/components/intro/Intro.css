@@ -1,0 +1,132 @@
+.intro {
+  display: flex;
+  height: 100vh;
+}
+
+.intro-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-right {
+  flex: 1;
+  position: relative;
+}
+.intro-left-wrapper {
+  /* Take note of this for small screen. 50% good for big screen and 75% good for small screen  */
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro-note {
+  font-size: 30px;
+  font-weight: 300;
+}
+.intro-name {
+  font-size: 60px;
+}
+
+.intro-title {
+  height: 50px;
+  overflow: hidden;
+}
+.intro-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: forestgreen;
+  align-items: center;
+  display: flex;
+}
+
+.intro-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+.intro-description {
+  padding-top: 20px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 550;
+}
+
+.intro-img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+.intro-bg {
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: forestgreen;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-primary {
+  height: 30px;
+  width: 100px;
+  background-color: forestgreen;
+  padding: 5px;
+}
+.i-scroll {
+  color: red;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+}
+
+.about-me {
+  font-weight: 400;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.about-desc {
+  font-weight: 300;
+}
+.core-area-text {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+.area-of-interest.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-image-cards {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.area-of-focus-text {
+  width: 70%;
+}
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
